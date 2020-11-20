@@ -226,12 +226,12 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: url("images/bg.jpg") center;
+		background: url("images/bg.jpg");
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
 		opacity: 1;
-		position: fixed;
+		position: center;
 		top: 0;
 	}
 
