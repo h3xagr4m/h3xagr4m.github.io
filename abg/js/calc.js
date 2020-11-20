@@ -41,7 +41,7 @@ function unitToggle (thisUnitToggle, otherUnitToggle,thisUnitClass,otherUnitClas
 };
 
 function respiratoryStatus(status) {
-	$('.respiratory').append("<p class='result'><strong>Respiratory Status:</strong> " + status + "</p>");
+	$('.respiratory').append("<p class='result'><strong>Respirasjonsstatus:</strong> " + status + "</p>");
 };
 
 function alveolarArterialGradient(age,FiO2,PaO2,PaCO2) {
@@ -54,9 +54,9 @@ function alveolarArterialGradient(age,FiO2,PaO2,PaCO2) {
     	} else {
     		var result = "Normal";
     	}
-    	$('.respiratory').append("<p class='result'><strong>A-a Gradient:</strong> "+ result + " for age group <span class='badge'>" + gradient.toFixed(0) + "mmHg</span></p>");
+    	$('.respiratory').append("<p class='result'><strong>A-a Gradient:</strong> "+ result + " for aldersgruppe <span class='badge'>" + gradient.toFixed(0) + "mmHg</span></p>");
     } else {
-        $('.respiratory').append("<p class='result'><strong>A-a Gradient:</strong> The result is a negative value. This is incorrect. Was the patient on a different FiO<sub>2</sub> before or when the sample was taken? Otherwise a technical or transcription error might have occurred.</p>");
+        $('.respiratory').append("<p class='result'><strong>A-a Gradient:</strong> Resultatet er en negativ verdi. Dette er en feil. Var pasienten på en annen FiO substitusjon<sub>2</sub> før eller når prøven ble tatt? Ellers er det en teknisk feil.</p>");
     }
 };
 
@@ -74,17 +74,17 @@ function getStandardisedValues(analyte,requiresConversion) {
 function respiratoryOnset(calculatedH,PaCO2Change) {
     var onsetRatio = Math.abs( (40 - calculatedH) / ( PaCO2Change ) );
     if (onsetRatio < 0.3) {
-        return "Chronic";
+        return "Kronisk";
     } else if (onsetRatio > 0.8) {
-        return "Acute";
+        return "Akutt";
     } else {
-        return "Acute on chronic";
+        return "Akutt på kronisk";
     }
 };
 
 //Respiratory acidosis compensation calculation
 function respiratoryAcidosisCompensation(onset,PaCO2Change,HCO3) {
-    if (onset === "Chronic") {
+    if (onset === "Kronisk") {
         var expectedHCO3 = Math.round(3.5 * PaCO2Change / 10 + 24);
         if (HCO3 > expectedHCO3) {
             return metabolicAlkalosis;
@@ -107,7 +107,7 @@ function respiratoryAcidosisCompensation(onset,PaCO2Change,HCO3) {
 
 //Respiratory alkalosis compensation calculation
 function respiratoryAlkalosisCompensation(onset,PaCO2Change,HCO3) {
-    if (onset === "Chronic") {
+    if (onset === "Kronisk") {
         var expectedHCO3 =  Math.round(PaCO2Change / 10);
         var expectedHCO3High = 24 - expectedHCO3 * 5;
         var expectedHCO3Low = 24 - expectedHCO3 * 7;
@@ -157,7 +157,7 @@ function metabolicAlkalosisCompensation(HCO3Change,PaCO2) {
 //ABG values lead to error
 function error() {
     error_present = true;
-    return "Unable to ascertain a primary disorder. Please reconsider the validity of your sample.";
+    return "Klarer ikke å finne en primær svikt. Vennligst kontroller data.";
 };
 //we position and size modal according to window size
 function setAnionGapModalPosition() {
@@ -277,14 +277,14 @@ $(document).ready(function(){
         var calculatedpH = parseFloat(((-Math.log10(calculatedH / 1000000000)).toFixed(2)));
         if (pH !== calculatedpH) {
             $('.validity').addClass('alert alert-danger');
-            $('.validity').html("<strong>Caution: </strong>Calculated pH is " + calculatedpH + " using a modified Henderson-Hasselbach equation. If this differs significantly from the ABG pH then your ABG might be invalid.");
+            $('.validity').html("<strong>Caution: </strong>Kalkulert pH er " + calculatedpH + " ved bruk av modifisert Henderson-Hasselbach formel. Hvis dette gir store avvik fra ABG pH kan din ABG være feilmåling o.l.");
         }
         //assessing respiratory status
         if ( PaO2 < 60 ) {
         	if (PaCO2 > 45) {
-        		respiratoryStatus("Type 2 Respiratory Failure");
+        		respiratoryStatus("Type 1 Respirasjonssvikt");
         	} else {
-        		respiratoryStatus("Type 1 Respiratory Failure");
+        		respiratoryStatus("Type 2 Respirasjonssvikt");
         	}
         } else {
 	        if ( PaCO2 > 45 ) {
