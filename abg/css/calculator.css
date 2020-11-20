@@ -1,0 +1,200 @@
+body {
+	background-color: #204056;
+}
+
+.navbar-brand, .navbar a {
+	color: #204056 !important;
+}
+
+.navbar {
+	border-radius: 0;
+	border: none;
+}
+.navbar-default .navbar-nav > .active > a {
+	background-color: #34B3A0;
+	color: white !important;
+}
+
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:hover {
+	background-color: #247D70;
+	color: white !important;
+}
+
+.mask {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: gray;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+h1, h2, h3, label, p, li, button, input[type=submit], #units, .submitted-value {
+	color: white;
+}
+
+h3 {
+	text-align: center;
+}
+
+p, li, button, input[type=submit], .submitted-value, .badge {
+	font-size: 18px;
+}
+
+#units {
+	text-align: right;
+}
+
+.btn-group {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.btn-group button {
+	background-color: #34B3A0;
+}
+
+.btn-group button:hover {
+	background-color: #204056;
+}
+
+.btn-group .active {
+	background-color: #247D70;
+}
+
+#abgcalc, #results {
+	min-height: 600px;
+}
+
+form, #units {
+	max-width: 700px;
+	margin: auto;
+}
+
+.form-control:focus {
+	border: 1px solid white;
+	box-shadow: 0px 0px 3px 3px #34B3A0;
+}
+
+.header {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#reminder {
+	text-align: center;
+}
+
+.submitted-values, #results > .results-table {
+	margin-bottom: 10px;
+	border-bottom: 3px solid #34B3A0;
+}
+
+.submitted-value {
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px 0px;
+}
+
+#results {
+	display: none;
+}
+
+#reanalyse, input[type=submit], .modal-button {
+	border: none;
+	border-radius: 2px;
+	padding: 10px 20px;
+	display: block;
+	color: white;
+	background-color: #34B3A0;
+	margin: 20px auto;
+	font-size: 18px;
+}
+
+#submitanion {
+	padding: 30px 15px;
+}
+
+#submitanion label {
+	margin: 10px;
+}
+
+.checkanion {
+	border: none;
+	border-radius: 2px;
+	padding: 5px 10px;
+	color: white;
+	background-color: #34B3A0;
+	font-size: 14px;
+	width: 195px;
+	margin-left: 20px;
+}
+
+.aniongap-modal {
+	height: 320px;
+	position: fixed;
+	background-color: #204056;
+	border-radius: 2px;
+	display: none;
+	z-index: 2;
+}
+
+#closeanion {
+	position: absolute;
+	right: 15px;
+	font-size: 26px;
+	color: white;
+}
+
+#closeanion:hover {
+	text-decoration: none;
+}
+
+.aniongap-modal p {
+	font-size: 16px;
+	padding-top: 5px;
+}
+
+.glyphicon {
+	color: #34B3A0;
+}
+
+#reanalyse:hover, input[type=submit]:hover, .modal-button:hover, .checkanion:hover {
+	color: #34B3A0;
+	background-color: white;
+}
+
+.acidbase a:hover {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+	.submitted-values > .values-row > .row > .submitted-value > span {
+		display: block !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.aniongap-modal {
+		height: 360px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.submitted-values > .values-row > .row > .submitted-value > span {
+		display: block !important;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.checkanion {
+		display: block;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.form-group > .form-control-static {
+		font-size: 13px;
+	}
+}

@@ -1,0 +1,46 @@
+body {
+	background-color: #204056;
+	padding-bottom: 50px;
+}
+
+.navbar-brand, .navbar a {
+	color: #204056 !important;
+}
+
+.navbar {
+	border-radius: 0;
+	border: none;
+}
+.navbar-default .navbar-nav > .active > a {
+	background-color: #34B3A0;
+	color: white !important;
+}
+
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:hover {
+	background-color: #247D70;
+	color: white !important;
+}
+
+h1, p, li, a {
+	color: white;
+}
+
+h2 {
+	text-align: center;
+}
+
+h2, h3, a:hover {
+	color: #34B3A0;
+}
+
+p, li {
+	font-size: 18px;
+}
+
+table {
+	background: #EEEEEE;
+}
+
+.panel-body li {
+	color: #204056;
+}

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="device=device-width, initial-scale=1">
+		<title>ArterialBloodGas.com - Acid-Base Analysis</title>
+		<meta name="author" content="Matthew Attard">
+		<meta name="description" content="Follow this tutorial to excel at interpreting acid-base disorders from arterial blood gases.">
+		<meta name="keywords" content="arterial blood gas analysis, blood gas analysis, blood gas, acidosis, alkalosis">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/pages.css">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-default">
+				<div class="container">
+				    <div class="navbar-header">
+				      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+				      	</button>
+				      	<span class="navbar-brand">ArterialBloodGas.com</span>
+				    </div>
+				    <div class="collapse navbar-collapse" id="navbar-collapse">
+				      	<ul class="nav navbar-nav">
+				        	<li><a href="index.html">Calculator</a></li>
+				            <li><a href="respiratoryanalysis.html">Respiratory Interpretation</a></li>
+	        				<li class="active"><a href="acidbaseanalysis.html">Acid-Base Interpretation<span class="sr-only">(current)</span></a></li>
+				      		<li><a href="disclaimer.html">Disclaimer</a></li>
+				      	</ul>
+				    </div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="container">
+				<h1>Acid-Base Analysis & Interpretion</h1>
+
+				<p>The knowledge to interpret an artial blood gas is an essential skill in the healthcare professional's toolbox. It provides quantitative information on a number of domains that could prove lethal to the patient should they be abnormal. Fortunately, this skill is not difficult to acquire.</p>
+
+				<p>Many healthcare professionals use their experience to quickly read an ABG. Others use a simple, multi-step process that would cover the common presentations. In this article we will provide a detailed guideline on interpreting the arterial blood gas acid-base results.</p>
+
+				<h2>Contents</h2>
+				<ol>
+				<li><a href="#abgconsistency">ABG Consistency</a></li>
+				<li><a href="#primarydisorder">Determine a Primary Disorder</a></li>
+				<li><a href="#respiratoryonset">Understanding Respiratory Disorder Onset</a></li>
+				<li><a href="#compensation">Compensation and Secondary Disorders</a></li>
+				<li><a href="#investigatemetabolicacidosis">Investigating Metabolic Acidosis Further</a></li>
+				<li><a href="#investigatemetabolicalkalosis">Investigating Metabolic Alkalosis Further</a></li>
+				<li><a href="#aetiologies">Suggested Aetiologies</a></li>
+					<ul>
+						<li><a href="#respiratoryacidosis">Respiratory Acidosis</a></li>
+						<li><a href="#respiratoryalkalosis">Respiratory Alkalosis</a></li>
+						<li><a href="#metabolicalkalosis">Metabolic Alkalosis</a></li>
+						<li><a href="#metabolicacidosis">Metabolic Acidosis</a></li>
+						<li><a href="#respacidosis-metacidosis">Respiratory Acidosis & Metabolic Acidosis</a></li>
+						<li><a href="#respalkalosis-metalkalosis">Respiratory Alkalosis & Metabolic Alkalosis</a></li>
+						<li><a href="#respacidosis-metalkalosis">Respiratory Acidosis & Metabolic Alkalosis</a></li>
+						<li><a href="#respalkalosis-metacidosis">Respiratory Alkalosis & Metabolic Acidosis</a></li>
+					</ul>
+				<li><a href="#references">References</a></li>
+				</ol>
+
+				<h2 id="abgconsistency">ABG Consistency</h2>
+
+				<p>Once a clinical history has been taken, all ABG interpretations start by checking if the ABG values are actually consistent with eachother at the chemical level. Two of the more important values, P<sub>a</sub>CO<sub>2</sub> and HCO<sub>3</sub><sup>-</sup>, have a role to play in creating the pH environment. Thus, to check for the ABG consistency all we need to do is calculate if these 3 variables are at the appropriate level relative to the eachother.</p>
+
+				<p>To perform this analysis we start by obtaing a value for H<sup>+</sup> using a modified Henderson-Hassselbach equation:</p>
+				<p>estimated [H<sup>+</sup>	] = 24 * [P<sub>a</sub>CO<sub>2</sub>] / [HCO<sub>3</sub><sup>-</sup>]</p>
+
+				<p>Then we can use this simple equation to compare our estimated pH and the ABG's pH:</p>
+				<p>estimated pH = -log<sub>10</sub>( [H<sup>+</sup>] / (1 * 10<sup>9</sup>) ) to 2 decimal places.</p>
+
+				<p>If the ABG pH and estimated pH vary considerably then one should give good consideration to the possibility of sample inadequacy.</p>
+
+
+				<h2 id="primarydisorder">Determine a Primary Disorder</h2>
+				<p>We start by looking at the pH. Normal pH is considered to be between 7.35 and 7.45. As a consequence:</p>
+				<ul>
+					<li>Acidaemia is a pH less than 7.35</li>
+					<li>Alkalaemia is a pH greater than 7.45</li>
+				</ul>
+
+				<p>Some people interchange the words acidaemia with acidosis and alkalaemia with alkalosis. Unfortunately this should not be so. An acidosis is a disorder that causes acidaemia and alkalosis is a disorder that causes alkalaemia.</p>
+
+				<p>Generally an abnormality in P<sub>a</sub>CO<sub>2</sub> means that there is a respiratory element whereas a change in HCO<sub>3</sub><sup>-</sup> means that there is a metabolic element.</p>
+
+				<p>To understand relationships between pH, P<sub>a</sub>CO<sub>2</sub> and HCO<sub>3</sub><sup>-</sup>, one must know that pH is lowered by an increase in P<sub>a</sub>CO<sub>2</sub> and a decrease in HCO<sub>3</sub><sup>-</sup> and vice-versa. Therefore in:</p>
+				<ul>
+					<li>Acidaemia one should expect a high P<sub>a</sub>CO<sub>2</sub> and/or a low HCO<sub>3</sub><sup>-</sup></li>
+					<li>Alkalaemia one should expect a low P<sub>a</sub>CO<sub>2</sub> and/or a high HCO<sub>3</sub><sup>-</sup></li>
+				</ul>
+
+				<p>The body generally tries to compensate for pH changes by altering the variable not related with the primary disorder. We will discuss this in detail in the compensation section.</p>
+
+				<p>From what we have discussed up to now one can therefore infer:</p>
+				<ul>
+					<li>High P<sub>a</sub>CO<sub>2</sub> and acidaemia is respiratory acidosis.</li>
+					<li>High HCO<sub>3</sub><sup>-</sup> and alkalosis is metabolic alkalosis.</li>
+				</ul>
+
+				<p>Should both values move in the same direction that would cause the underlying pH abnormality (eg. low pH, high P<sub>a</sub>CO<sub>2</sub> and low HCO<sub>3</sub><sup>-</sup>), then we can look for a percentage change in difference from their normal levels. The one with a greater percentage difference is the primary disorder whereas the other would be a secondary disorder (eg Respiratory acidosis with a secondary metabolic acidosis).</p>
+
+				<p>To calculate the percentage difference obtain the absolute number result of each equation:</p>
+				<p>P<sub>a</sub>CO<sub>2</sub> difference = (P<sub>a</sub>CO<sub>2</sub> - 40) / 40</p>
+				<p>HCO<sub>3</sub><sup>-</sup> difference = (24 - [HCO<sub>3</sub><sup>-</sup>]) / 24</p>
+				
+				<p>Then the highest absolute number would reflect the primary disorder, and the other the secondary one. If both are equal, than they can be equal primary disorders.</p>
+
+				<p>It might just be possible find that the P<sub>a</sub>CO<sub>2</sub> and HCO<sub>3</sub><sup>-</sup> are abnormal but the pH is normal. Given what we have read in this section, it is quite reasonable to expect that there might be situations in which there is an acidosis and  an alkalosis cancelling eachother (either as disparate disorders or where the body has performed a full compensation (eg lowered P<sub>a</sub>CO<sub>2</sub> to cause an alkalosis in response to a low HCO<sub>3</sub><sup>-</sup> causing an acidosis).</p>
+
+				<h2 id="respiratoryonset">Understanding Respiratory Disorder Onset</h2>
+				<p>We can use the change in [H<sup>+</sup>] concentration and the change in P<sub>a</sub>CO<sub>2</sub> to obtain an idea of the onset of a respiratory disorder. Just think for a second about this reaction which is the basis of what we have been discussing:</p>
+				<p>CO<sub>2</sub> + H<sub>2</sub>O <=> [H<sub>2</sub>CO<sub>3</sub><sup>-</sup>] <=> [H<sup>+</sup>] + [HCO<sub>3</sub><sup>-</sup>]</p>
+
+				<p>If P<sub>a</sub>CO<sub>2</sub> increases then there is a rise in intracellular [H<sup>+</sup>] and vice-versa. In the acute phase of a respiratory condition compensation is limited to intracellular buffering rather than renal retention of [HCO<sub>3</sub><sup>-</sup>]. Thus one would expect a change in [H<sup>+</sup>] to be highly correlated to a direct change in P<sub>a</sub>CO<sub>2</sub>. If not, then there is chronic component.</p>
+
+				<p>The relevant equation is the absolute number result of:</p>
+
+				<p>( estimated[H<sup>+</sup>] - 40 ) / ( P<sub>a</sub>CO<sub>2</sub>mmHg - 40)</p>
+
+				<p>We can classify the onset like this:</p>
+				<ul>
+					<li>Acute if greater than 0.8</li>
+					<li>Acute on chronic if between 0.3 and 0.8</li>
+					<li>Chronic if less than 0.3</li>
+				</ul>
+				<p>For the purpose of the next discussion, we will treat acute-on-chronic as acute onset.</p>
+
+				<h2 id="compensation">Compensation and Secondary Disorders</h2>
+				<p>In the previous section we have touched upon the fact that there might be either two concurrent disorders or some form of compensation from the body to try to nudge the pH towards the normal range.</p>
+
+				<p>Compensation is dependent on a number of factors, including proper functioning of the underlying organ systems (lungs and kidneys). This process tends to be divided into two broad sections: acute (within 6-24 hours) and chronic (within 1-4 days). One must note that respiratory compensation as a process is faster than metabolic compensation given the exquisitely prompt feedback mechanisms of the respiratory system.</p>
+
+				<p>Given, say, a metabolic alkalosis of pH 7.7 one would expect a high [HCO<sub>3</sub><sup>-</sup>]. The body would can try to compensate for this by increasing the P<sub>a</sub>CO<sub>2</sub>. Please note that it is quite uncommon for the body to perform a full compensation.</p>
+
+				<p>To check whether we have two disorders or one disorder with compensation, we fortunately have a few equations that can assist us. For example, in the current scenario, using the equation:</p>
+
+				<p>estimated P<sub>a</sub>CO<sub>2</sub> = 40 + 0.6([HCO<sub>3</sub><sup>-</sup>] - 24)</p>
+
+				<p>If:</p>
+				<ul>
+					<li>real P<sub>a</sub>CO<sub>2</sub> is equal to estimated P<sub>a</sub>CO<sub>2</sub> then this is a simple metabolic alkalosis</li>
+					<li>real P<sub>a</sub>CO<sub>2</sub> is lower than estimated P<sub>a</sub>CO<sub>2</sub> then there is a concurrent respiratory alkalosis</li>
+					<li>real P<sub>a</sub>CO<sub>2</sub> is higher than estimated P<sub>a</sub>CO<sub>2</sub> then there is a concurrent respiratory acidosis</li>
+				</ul>
+
+				<p>Carefully note that since we are expecting some form of compensation from the P<sub>a</sub>CO<sub>2</sub>, there might be a respiratory acidosis even if the PaCO2 is within its normal range.</p>
+
+				<p>All the relevant equations can be found below:</p>
+				<table class="table table-striped">
+					<tbody>
+						<tr>
+							<td>Metabolic acidosis</td>
+							<td>Estimated P<sub>a</sub>CO<sub>2</sub> = ( 1.5 x [HCO<sub>3</sub><sup>-</sup>] ) + 8 ± 2</td>
+						</tr>
+						<tr>
+							<td>Metabolic alkalosis</td>
+							<td>Increase in P<sub>a</sub>CO<sub>2</sub> = 40 + 0.6( [HCO<sub>3</sub><sup>-</sup>] - 24 )</td>
+						</tr>
+						<tr>
+							<td>Acute respiratory acidosis</td>
+							<td>Increase  in [HCO<sub>3</sub><sup>-</sup>]= ( ( P<sub>a</sub>CO<sub>2</sub> - 40 ) / 10 ) ± 3</td>
+						</tr>
+						<tr>
+							<td>Chronic respiratory acidosis (3-5 days)</td>
+							<td>Increase  in  [HCO<sub>3</sub><sup>-</sup>]= 3.5( ( P<sub>a</sub>CO<sub>2</sub> - 40 ) / 10)</td>
+						</tr>
+						<tr>
+							<td>Acute respiratory alkalosis</td>
+							<td>Decrease in  [HCO<sub>3</sub><sup>-</sup>]= 2( ( 40 - P<sub>a</sub>CO<sub>2</sub> ) / 10)</td>
+						</tr>
+						<tr>
+							<td>Chronic respiratory alkalosis</td>
+							<td>Decrease in  [HCO<sub>3</sub><sup>-</sup>] = 5( (40 - P<sub>a</sub>CO<sub>2</sub> ) / 10) to 7( (40 - P<sub>a</sub>CO<sub>2</sub> ) / 10)</td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 id="investigatemetabolicacidosis">Investigating Metabolic Acidosis Further</h2>
+				<p>A metabolic acidosis can by analysed further by calculating the anion gap. The equation is:</p>
+
+				<p>Anion Gap = [Na<sup>+</sup>] - ( [Cl<sup>-</sup>] + [HCO<sub>3</sub><sup>-</sup>] )</p>
+
+				<p>A high anion gap is greater than 12 mEq/L.</p>
+
+				<p>In patients with hypoalbuminaemia, the normal anion gap can be significantly lower than normal. Expect 2.5 mEq/L lower for each 1 g/dL decrease in the plasma albumin concentration in g/dL. We can solve this with the equation:</p>
+
+				<p>Anion Gap adjusted for hypoalbuminaemia: [Na<sup>+</sup>] - ( [Cl<sup>-</sup>] + [HCO<sub>3</sub><sup>-</sup>] ) + (2.5 * (4 - albumin) )</p>
+
+				<p>If the anion gap is elevated then:</p>
+				<ul>
+					<li>Assess relationship between the anion gap and the decrease in [HCO<sub>3</sub><sup>-</sup>]. The equation is:</li>
+					<p>Ratio = (anion gap value - 12) / (24 - [HCO<sub>3</sub><sup>-</sup>])</p>
+					<ul>
+						<li>If the ratio is between 1 and 2, then this is a simple anion gap metabolic acidosis.</li>
+						<li>If the ratio is less than 1.0, then there is a secondary non-anion gap metabolic acidosis. Eg. Diabetic ketoacidosis (high anion gap) and diarrhoea (normal anion gap)</li>
+						<li>If the ratio is greater than 2.0 then there is a secondary metabolic alkalosis.</li>
+					</ul>
+					<li>Consider further analysis using the osmolal gap. Calculation of osmolal gap is warranted if:</p>
+					<ul>
+						<li>Anion gap elevation not explained by an obvious cause (Eg. diabetic ketoacidosis, lactic acidosis, renal failure)</li>
+						<li>Toxic ingestion is suspected</li>
+					</ul>
+					<p>To calculate the osmolal gap:</p>
+					<p>Osmolal gap using SI units =  measured plasma osmolality – ( 2[Na<sup>+</sup>] + glucose[mmol/L] – urea[mmol/L] + 1.25 x ethanol[mmol/L] )</p>
+					<p>Osmolal gap using US units =  measured plasma osmolality – ( 2[Na<sup>+</sup>] + ( glucose[mg/dL] / 18 ) – ( BUN[mg/dL] / 2.8 ) + ( ethanol / 3.7 ) )</p>
+					<p>The osmolal gap should be < 10mOsm/kg.</p>
+				</ul>
+
+				<h2 id="investigatemetabolicalkalosis">Investigating Metabolic Alkalosis Further</h2>
+
+				<p>Based on the urinary chloride, metabolic alkalosis is divided into:</p>
+				<ul>
+					<li>Chloride-responsive - Urine chloride < 20 mEq/L</li>
+					<ul>
+					    <li>Loss of hydrogen ions</li>
+					    	<ul>
+								<li>Vomiting</li>
+								<li>Kidneys</li>
+							</ul>
+					    <li>Contraction alkalosis from diuretic use - loop diuretics and thiazides</li>
+					    <li>Posthypercapnia</li>
+					    <li>Cystic Fibrosis</li>
+				    </ul>
+					<li>Chloride-resistant - Urine chloride > 20 mEq/L</li>
+					<ul>
+				    	<li>Retention of bicarbonate</li>
+				    	<li>Hypokalaemia</li>
+				    	<li>Alkalotic agents (such as bicarbonate or antacids)</li>
+					   	<li>Hyperaldosteronism</li>
+					   	<li>Aminoglycoside toxicity</li>
+					    <li>Excess gaplycyrrhizin consumption</li>
+				    </ul>
+				</ul>
+
+				<h2 id="aetiologies">Suggested Aetiologies</h2>
+				<div class="disorders">
+					<div id="respiratoryacidosis" class="abdisorders">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Respiratory Acidosis</div>
+							</div>
+							<div class="panel-body">
+								<ul>
+								    <li>Airway obstruction</li>
+								    	<ul>
+								    		<li>Upper</li>
+								    		<li>Lower</li>
+								    			<ul>
+								    				<li>COPD</li>
+								        			<li>Asthma</li>
+								        			<li>Other obstructive lung disease</li>
+								    			</ul>
+								    	</ul>
+								    <li>CNS depression</li>	
+								    <li>Sleep disordered breathing (Obstructive Sleep Apnoea, Obesity Hypoventilation Syndrome)</li>
+								    <li>Neuromuscular impairment</li>
+								    <li>Ventilatory restriction</li>
+								    <li>Increased CO<sub>2</sub>  production: shivering, rigors, seizures, malignant hyperthermia, hypermetabolism, increased intake of carbohydrates</li>
+								    <li>Incorrect mechanical ventilation settings</li>
+								 </ul>
+							</div>
+						</div>
+					</div>
+					<div id="respiratoryalkalosis"  class="abdisorders">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Respiratory Alkalosis</div>
+							</div>
+							<div class="panel-body">
+								<ul>
+									<li>Central Nervous System stimulation: fever, pain, fear, anxiety, stroke, cerebral edema, brain trauma, brain tumor, CNS infection</li>
+									<li>Hypoxaemia or hypoxia: lung disease, profound anaemia, low FiO<sub>2</sub></li>
+									<li>Stimulation of chest receptors: pulmonary oedema, pleural effusion, pneumonia, pneumothorax, pulmonary embolus</li>
+									<li>Drugs, hormones: salicylates, catecholamines, medroxyprogesterone, progestins</li>
+									<li>Pregnancy, liver disease, sepsis, hyperthyroidism</li>
+									<li>Incorrect mechanical ventilation settings</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="metabolicalkalosis" class="abdisorders">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Metabolic Alkalosis</h3>
+							</div>
+							<div class="panel-body">
+								<ul>
+									<li>Hypovolemia with Cl<sup>-</sup> depletion</li>
+	        						<ul>
+	        							<li>GI loss of H<sup>+</sup> - Vomiting, gastric suction, villous adenoma, diarrhoea with chloride-rich fluid</li>
+	        							<li>Renal loss H<sup>+</sup> - Loop and thiazide diuretics, post-hypercapnia</li>
+	        						</ul>
+	        						<li>Hypervolemia, Cl<sup>-</sup> expansion</li>
+	        						<ul>
+	        							<li>Renal loss of H<sup>+</sup>:  oedematous states (heart failure, cirrhosis, nephrotic syndrome), hyperaldosteronism, hypercortisolism, excess ACTH, exogenous steroids, hyperreninaemia, severe hypokalaemia, renal artery stenosis, bicarbonate administration</li>
+	        						</ul>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="metabolicacidosis" class="abdisorders">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Metabolic Acidosis</h3>
+							</div>
+							<div class="panel-body">
+								<h4>Elevated anion gap:</h4>
+								<ul>
+									<li>Diabetic ketoacidosis, alcoholic ketoacidosis, starvation ketoacidosis <span class="label label-default">More common</span></li>
+									<li>Lactic acidosis <span class="label label-default">More common</span></li>
+	            						<ul>
+	            							<li>Type A:  tissue ischaemia</li>
+	            							<li>Type B:  Altered cellular metabolism</li>
+	            						</ul>
+									<li>Methanol intoxication</li>
+									<li>Uraemia</li>
+									<li>Paraldehyde toxicity</li>
+									<li>Isoniazid</li>
+	            					<li>Ethanol or ethylene glycol intoxication <span class="label">Frequently associated with an osmolal gap</span></li>
+	            					<li>Salicylate intoxication</li>
+	            				</ul>
+	            				<h4>Normal anion gap:</h4>
+	    						<ul>
+	    							<li>GI loss of HCO<sub>3</sub><sup>-</sup>: Diarrhoea, ileostomy, proximal colostomy, ureteral diversion</li>
+	    							<li>Renal loss of HCO<sub>3</sub><sup>-</sup></li>
+	    								<ul>
+	    									<li>Proximal RTA</li>
+	    									<li>Carbonic anhydrase inhibitor (acetazolamide)</li>
+	    								</ul>
+	    							<li>Renal tubular disease</li>
+	    								<ul>
+	    									<li>Acute Tubular Necrosis</li>
+	    									<li>Chronic renal disease</li>
+	    									<li>Distal RTA</li>
+	    									<li>Aldosterone inhibitors or absence</li>
+	    									<li>NaCl infusion, total parental nutrition, NH<sub>4</sub><sup>+</sup> administration</li>
+	    								</ul>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="respacidosis-metacidosis" class="abdisorders">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Respiratory Acidosis and Metabolic Acidosis</h3>
+							</div>
+							<div class="panel-body">
+								<ul>
+									<li>Cardiac arrest</li>
+    								<li>Intoxications</li>
+    								<li>Multi-organ failure</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="respalkalosis-metalkalosis" class="abdisorders">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Respiratory Alkalosis and Metabolic Alkalosis</h3>
+							</div>
+							<div class="panel-body">
+								<ul>
+									<li>Cirrhosis with diuretics</li>
+    								<li>Pregnancy with vomiting</li>
+    								<li>Over-ventilation in COPD</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="respacidosis-metalkalosis" class="abdisorders">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Respiratory Acidosis and Metabolic Alkalosis</h3>
+							</div>
+							<div class="panel-body">
+								<ul>
+									<li>COPD with diuretics/vomiting/NG suction</li>
+    								<li>Severe hypokalaemia</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="respalkalosis-metacidosis" class="abdisorders">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Respiratory Alkalosis and Metabolic Acidosis</h3>
+							</div>
+							<div class="panel-body">
+								<ul>
+									<li>Sepsis</li>
+    								<li>Salicylate toxicity</li>
+    								<li>Renal failure with congestive heart failure or pneumonia</li>
+    								<li>Advanced liver disease</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h2 id="references">References</h2>
+				<ol>
+					<li>http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2936733/ [last accessed: 29/11/2015]</li>
+					<li>http://www.thoracic.org/professionals/clinical-resources/critical-care/clinical-education/abgs.php [last accessed: 29/11/2015]</li>
+					<li>http://www.anaesthesiamcq.com/AcidBaseBook/ab4_5.php [last accessed: 29/11/2015]</li>
+					<li>http://emedicine.medscape.com/article/243160-overview#a6 [last accessed: 29/11/2015]</li>
+					<li>http://www.acid-base.com/metab.php [last accessed: 29/11/2015]</li>
+					<li>http://fitsweb.uchc.edu/student/selectives/TimurGraham/Anion_Gap.html [last accessed: 29/11/2015]</li>
+				</ol>
+			</div>
+		</main>
+		<!--jQuery-->
+		<script src="js/jquery.js"></script>
+		<!--Bootstrap JS-->
+		<script src="css/bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
