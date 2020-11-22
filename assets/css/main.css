@@ -232,12 +232,12 @@ input, select, textarea {
 		
 	/* Set your background with this */
 
-		background: url("images/bg.jpg");
+		background: url("images/bg.jpg") center;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
 		opacity: 1;
-		position: cover;
+		position: fixed;
 		top: 0;
 	}
 
