@@ -224,21 +224,22 @@ input, select, textarea {
 		-webkit-transform: translate3d(0,0,0);
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
-		
+
 		-webkit-background-size: cover;
   		-moz-background-size: cover;
   		-o-background-size: cover;
   		background-size: cover;
-		
+
 	/* Set your background with this */
 
 		background: url("images/bg.jpg") center;
 		background-repeat: repeat-x;
-		height: 100%;
-		left: 0;
+		height: auto;
+		left: 25%;
+		width: 30%;
 		opacity: 1;
-		position: fixed;
-		top: 0;
+		position: absolute;
+		top: 0px;
 	}
 
 	@-moz-keyframes bg {
