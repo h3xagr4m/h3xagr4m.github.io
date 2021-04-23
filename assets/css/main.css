@@ -235,11 +235,10 @@ input, select, textarea {
 		background: url("images/bg.jpg") center;
 		background-repeat: repeat-x;
 		height: auto;
-		left: 25%;
-		width: 30%;
+		left: 0;
 		opacity: 1;
-		position: absolute;
-		top: 0px;
+		position: fixed;
+		top: 0;
 	}
 
 	@-moz-keyframes bg {
